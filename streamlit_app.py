@@ -79,12 +79,7 @@ def predict(model, image: Image.Image):
 st.title("Chest X-ray Multi-Label Classifier")
 
 st.error(
-    "**Research demo. Not a medical device. Not a diagnosis.** "
-    "This model was trained for a dataset benchmark, not for clinical use. It has "
-    "not been validated on images from other hospitals, scanners, or patient "
-    "populations, and it will still produce confident-looking numbers for an image "
-    "unlike anything it was trained on. Do not use these outputs to make any "
-    "decision about anyone's health. Ask a doctor."
+    "**Research demo"
 )
 
 uploaded = st.file_uploader("Upload a chest X-ray", type=["png", "jpg", "jpeg"])
