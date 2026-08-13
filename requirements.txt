@@ -1,0 +1,13 @@
+# Streamlit Community Cloud is CPU-only and has a limited resource budget.
+# The --extra-index-url below is important: without it, pip pulls the default
+# torch wheel with bundled CUDA libraries (~2GB+) and the app fails to build.
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+streamlit
+torch
+torchvision
+timm==1.0.9
+huggingface_hub
+pillow
+numpy
