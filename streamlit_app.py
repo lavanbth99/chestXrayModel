@@ -79,7 +79,10 @@ def predict(model, image: Image.Image):
 st.title("Chest X-ray Multi-Label Classifier")
 
 st.error(
-    "**Research demo"
+     "This is a research model. It estimates the likelihood of 14 chest findings: "
+    "atelectasis, cardiomegaly, consolidation, edema, enlarged cardiomediastinum, "
+    "fracture, lung lesion, lung opacity, no finding, pleural effusion, pleural "
+    "other, pneumonia, pneumothorax, and support devices.
 )
 
 uploaded = st.file_uploader("Upload a chest X-ray", type=["png", "jpg", "jpeg"])
